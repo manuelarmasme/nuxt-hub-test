@@ -9,11 +9,8 @@ defineProps({
 
 <template>
   <div>
-    <h3>
-      <ContentSlot name="title" />
-    </h3>
-    <span>
-      <ContenSlot name="description" />
-    </span>
+    <h2 class="fancy-header">
+      <ContentSlot :use="$slots.default" unwrap="p" />
+    </h2>
   </div>
 </template>
