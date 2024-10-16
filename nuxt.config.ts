@@ -5,6 +5,8 @@ export default defineNuxtConfig({
   // https://nuxt.com/modules
   modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxthq/studio', '@nuxt/content'],
 
+  ssr: true,
+
   // https://devtools.nuxt.com
   devtools: { enabled: true },
 
