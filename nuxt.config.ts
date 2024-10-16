@@ -3,13 +3,12 @@ import { defineNuxtConfig } from 'nuxt/config'
 export default defineNuxtConfig({
 
   // https://nuxt.com/modules
-  modules: [
-    '@nuxthub/core',
-    '@nuxt/eslint',
-  ],
+  modules: ['@nuxthub/core', '@nuxt/eslint', '@nuxthq/studio', '@nuxt/content'],
 
   // https://devtools.nuxt.com
   devtools: { enabled: true },
+
+  content: {},
 
   // Env variables - https://nuxt.com/docs/getting-started/configuration#environment-variables-and-private-tokens
   runtimeConfig: {
